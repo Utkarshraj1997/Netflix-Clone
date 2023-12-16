@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- favicon -->
+
+    
+       <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/fav1/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/fav1/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/fav1/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+       <!-- fonts  -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap"
+        rel="stylesheet">
+        <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/bfb86eba76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+              <!-- navigation  -->
+        <div class="navigation flex" id="navigation">
+            <div class="logo">
+                <img src="Images/logo.png" alt="" srcset="">
+            </div>
+            <div class="navbar flex" id="navbar1">
+                <div class="left-nav flex">
+                    <ul class="flex menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./tv shows netflix/netflix tv shows.html">TV Shows</a></li>
+                        <li><a href="">Movies</a></li>
+                        <li><a href="./movies/movies.html">New & Popular
+                            </a></li>
+                        <li><a href="#">Mylist</a></li>
+                    </ul>
+                    <div id="browsetoggle">Browse</div>
+                </div>
+                <div class="right-nav flex">
+
+
+
+                    <span><i class=" fa fa-solid fa-magnifying-glass" id="searchicon"></i></span>
+
+                    <span class="text"><a href="./children/children.html">Children</a></span>
+                    <span><i class="fa  fa-regular fa-bell" id=bell></i></span>
+                    <img id="userimg" src="Images/chimp.jpg" alt="" srcset="">
+                    <span><i class=" fa fa-solid fa-caret-down"></i></span>
+
+                </div>
+
+            </div>
+           
+        </div>
+        <!-- inner banner  -->
+        <div class="inner">
+            <div class="banner flex">
+                <h3 id="bannerh3">Marvel's Studio's</h3>
+                <h1 id="bannerh1">Avengers:End Game</h1>
+                <div class="banner-button flex">
+                    <button class="btn btn1" id="playbtn"><span class="play"><i
+                                class="  fa-solid fa-play"></i></span>Play</button>
+                    <button class="btn  btn2" id="infobtn"> <span class="more"><i
+                                class=" fa-solid fa-circle-info"></i></span>More
+                        Info</button>
+                </div>
+            </div> 
+            <!-- slider  -->
+            <div class="carousel">
+                <h3>New Release</h3>
+                <div class="carousel-slider">
+                    <div class="carousel-list">
+                        <div class="carousel-item">
+                            <img src="Images/avengers.webp" id="avengersimg" alt="" srcset="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/batman.jpeg" id="batmanimg" srcset="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/captain america.jpeg" id="americaimg" srcset="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/deadpool.webp" id="deadpoolimg" alt="" srcset="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/thor.webp" id="thorimg" alt="" srcset="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/doctor-strange.webp" id="strangeimg" alt="" srcset="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/gardians of galaxy.jpg" id="galaxyimg" alt="" srcset="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/iron man.webp" id="ironmanimg" alt="" srcset="">
+                        </div>
+                        <div class="carousel-item" id="venomimg">
+                            <img src="Images/venom.jpg" alt="" srcset="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+           <!-- inner videos -->
+    <div class="video-container">
+
+        <video autoplay loop muted id="endgamevideo" class="allvideos">
+            <source src="Images/video.mp4">
+        </video>
+        <video autoplay loop muted id="batmvideo" class="allvideos all">
+            <source src="Images/batmavideo.mp4">
+        </video>
+        <video autoplay loop muted id="venomvideo" class="allvideos all">
+            <source src="Images/venomvideo.mp4">
+        </video>
+        <video autoplay loop muted id="americavideo" class="allvideos all">
+            <source src="Images/americavideo.mp4">
+        </video>
+        <video autoplay loop muted id="deadpoolvideo" class="allvideos all">
+            <source src="Images/deadpoolvideo.mp4">
+        </video>
+        <video autoplay loop muted id="thorvideo" class="allvideos all">
+            <source src="Images/thorvideo.mp4">
+        </video>
+        <video autoplay loop muted id="strangevideo" class="allvideos all">
+            <source src="Images/strangevideo.mp4">
+        </video>
+        <video autoplay loop muted id="galaxyvideo" class="allvideos all">
+            <source src="Images/galaxyvideo.mp4">
+        </video>
+        <video autoplay loop muted id="ironmanvideo" class="allvideos all">
+            <source src="Images/ironmanvideo.mp4">
+        </video>
+    </div>
+          <!-- more info tabs -->
+    <div class="infotabs" id="endgame">
+        <video autoplay loop muted id="infopic">
+            <source src="Images/video.mp4">
+        </video>
+        <div class="leftdiv infotabrating">
+            <span><i class="fa-regular fa-circle-play"></i></span>
+            <span><i class="fa-solid fa-plus"></i></span>
+            <span><i class="fa-solid fa-thumbs-up"></i></span>
+        </div>
+
+        <p id="rating">
+            <i>94% </i>Match 2023 1h34m <br><br>
+            Mild fear,mild language,mild violence
+        </p>
+        <p id="geners">
+            <i>Genere:</i> Sci-Fi Movies,<Action>
+            <br>Adventure <br> movies,US MOvies <br><br><br><br><br>
+            <i> This movie is:</i> Feel Good,Exciting,Goofy
+        </p>
+
+
+        <p id="para">
+            AVENGERS: ENDGAME is set after Thanos' catastrophic use of the Infinity Stones randomly wiped out half of
+            Earth's population in Avengers: Infinity War. Those left behind are desperate to do something -- anything --
+            to bring back their lost loved ones
+        </p>
+    </div>
+
+    <div id="notificationtab">
+        <p>No recent notification</p>
+    </div>
+    <form id="searchform"><input id="input" type="text" autofocus></form>
+
+    <div id="usercard">
+        <div class="users"><span><img src="Images/user2.png" alt="" srcset=""></span><span class="userlist write">user
+                2</span></div>
+        <div class="users"><span><img src="Images/user3.jpg" alt="" srcset=""></span><span class="userlist write">user
+                3</span></div>
+        <div class="users"><span><i class="fa-solid fa-pencil usericon"></i></span><span class="userlist">Manage
+                profiles</span></div>
+        <div class="users"><span><i class="fa-brands fa-squarespace usericon"></i></span><span class="userlist">Transfer profiles</span></div>
+        <div class="users"><span><i class="fa-solid fa-user usericon"></i><span class="userlist">Account</span></div>
+        <div class="users"><span><i class="fa-solid fa-question usericon"></i></span><span class="userlist">Help
+                Center</span></div>
+    </div>
+
+    <div id="color-overlay"></div>
+    <i class="fa-regular fa-circle-xmark" id="close"></i>
+           <!-- outside container and positionings -->
+    <div id="outsidecont">
+        <h3>Trending Now</h3>
+        <!-- trending items  -->
+        <div id="trending">
+            <div class="trending-items">
+                <img src="Images/avatr.jpg" id="avatar" alt=""> <!--1-->
+
+            </div>
+
+            <div class="trending-items">
+                <img src="Images/fast.jpg" id="fast" alt=""> <!--2-->
+
+            </div>
+            <div class="trending-items">
+                <img src="Images/oppen.jpg" id="oppen" alt=""> <!--3-->
+
+            </div>
+            <div class="trending-items">
+                <img src="Images/godzilla.jpg" id="godzilla" alt=""> <!--4-->
+
+            </div>
+            <div class="trending-items">
+                <img src="Images/arrival.jpg" id="arrival" alt=""> <!--5-->
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </div>
+    <!-- Trending scaled version  -->
+    <div class="trendingscale one" id="one">
+        <div class="imgdiv">
+            <img src="Images/avatr.jpg" alt="" srcset=""> <!--1-->
+            <div class="crosstrend one"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="detail">
+            <div class="leftdiv">
+                <span><i class="fa-regular fa-circle-play"></i></span>
+                <span><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-thumbs-up"></i></span>
+            </div>
+          
+            <p><i>New</i> U/A 16+ HD</p>
+            <p>Action.Adventure.Thriller</p>
+            <div class="lastdetail">
+                <span><i class="fa-regular fa-thumbs-up"></i></span>
+                <span>Most Liked</span>
+            </div>
+        </div>
+    </div>
+    <div class="trendingscale two" id="two"> <!--2-->
+        <div class="imgdiv">
+            <img src="Images/fast.jpg" alt="" srcset="">
+            <div class="crosstrend two"><i class="fa-solid fa-xmark"></i></div>
+            
+        </div>
+        <div class="detail">
+            <div class="leftdiv">
+                <span><i class="fa-regular fa-circle-play"></i></span>
+                <span><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-thumbs-up"></i></span>
+            </div>
+          
+            <p><i>New</i> U/A 16+ HD</p>
+            <p>Action.Adventure.Thriller</p>
+            <div class="lastdetail">
+                <span><i class="fa-regular fa-thumbs-up"></i></span>
+                <span>Most Liked</span>
+            </div>
+        </div>
+    </div>
+    <div class="trendingscale three " id="three"> <!--3-->
+        <div class="imgdiv">
+            <img src="Images/oppen.jpg" alt="" srcset="">
+            <div class="crosstrend three"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="detail">
+            <div class="leftdiv">
+                <span><i class="fa-regular fa-circle-play"></i></span>
+                <span><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-thumbs-up"></i></span>
+            </div>
+           
+            <p><i>New</i> U/A 16+ HD</p>
+            <p>Action.Adventure.Thriller</p>
+            <div class="lastdetail">
+                <span><i class="fa-regular fa-thumbs-up"></i></span>
+                <span>Most Liked</span>
+            </div>
+        </div>
+    </div>
+    <div class="trendingscale four" id="four"> <!--4-->
+        <div class="imgdiv">
+            <img src="Images/godzilla.jpg" alt="" srcset="">
+            <div class="crosstrend four"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="detail">
+            <div class="leftdiv">
+                <span><i class="fa-regular fa-circle-play"></i></span>
+                <span><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-thumbs-up"></i></span>
+            </div>
+            
+            <p><i>New</i> U/A 16+ HD</p>
+            <p>Action.Adventure.Thriller</p>
+            <div class="lastdetail">
+                <span><i class="fa-regular fa-thumbs-up"></i></span>
+                <span>Most Liked</span>
+            </div>
+        </div>
+    </div>
+    <div class="trendingscale five" id="five"> <!--5-->
+        <div class="imgdiv">
+            <img src="Images/arrival.jpg" alt="" srcset="">
+            <div class="crosstrend five"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="detail">
+            <div class="leftdiv">
+                <span><i class="fa-regular fa-circle-play"></i></span>
+                <span><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-thumbs-up"></i></span>
+            </div>
+            
+            <p><i>New</i> U/A 16+ HD</p>
+            <p>Action.Adventure.Thriller</p>
+            <div class="lastdetail">
+                <span><i class="fa-regular fa-thumbs-up"></i></span>
+                <span>Most Liked</span>
+            </div>
+        </div>
+    </div>
+       <!-- lowpx browse menu  -->
+    <div id="browsemenu">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="./tv shows netflix/netflix tv shows.html">TV Showss</a></div>
+        <div><a href="./movies/movies.html">Movies</a></div>
+        <div><a href="http://">New& <br>Popular</a></div>
+        <div><a href="#">Mylist</a></div>
+    </div>
+
+    
+    
+    
+    
+    
+
+
+      <!-- javascript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

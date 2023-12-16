@@ -1,0 +1,1977 @@
+/* UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    font-size: 16px;
+
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1%;
+}
+
+.inner {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.container {
+    width: 100%;
+    height: 102vh;
+    position: relative;
+   
+}
+
+/* NAVIGATION */
+
+.navigation {
+    width: 100%;
+    background-color: transparent;
+
+    position: relative;
+    top: 0px;
+    transition: all 0.3s;
+    position: fixed;
+}
+
+.left-nav {
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img {
+    width: 140px;
+    margin-left: 40px;
+}
+
+.navbar {
+    width: 85%;
+
+
+
+}
+
+ul li a {
+    color: #fff;
+    list-style: none;
+    font-size: 1rem;
+    margin-right: 40px;
+    text-decoration: none;
+    transition: all 0.5s;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a:hover {
+    color: red;
+}
+.text a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.text a:hover{
+    color: red;
+
+}
+
+.logo {
+    width: 15%;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right-nav {
+    width: 30%;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.right-nav img {
+    width: 35px;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    margin-top: 2px;
+}
+
+#browsetoggle {
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+
+    display: none;
+}
+
+.fa {
+    color: #fff;
+    margin: 0px 15px;
+    font-size: 1.1rem;
+}
+
+.right-nav {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.text {
+    color: #fff;
+
+}
+
+#notificationtab {
+
+    height: 100px;
+    width: 400px;
+    background-color: black;
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.7);
+
+    position: absolute;
+    top: 50px;
+    right: 230px;
+    display: none;
+    position: fixed;
+    z-index: 100;
+}
+
+#notificationtab p {
+    margin: 30px 0;
+
+    text-align: center;
+
+
+}
+
+/* USER NAMES AND MANAGING ACCOUNT STYLING */
+
+#usercard {
+
+    display: inline block;
+    width: fit-content;
+    height: fit-content;
+    border: 0.5px solid white;
+    background-color: #141414;
+    box-shadow: 2px 2px 2px rgb(90, 88, 88);
+    visibility: 0;
+    opacity: 0;
+    position: absolute;
+    top: 48px;
+    right: -400px;
+    transition: visibility 2s, opacity 0.5s;
+    position: fixed;
+    z-index: 100;
+
+}
+
+#usercard img {
+    width: 40px;
+}
+
+.users {
+
+    padding: 20px;
+
+}
+
+.userlist {
+
+    margin-left: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.userlist:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.userlist.write {
+    position: relative;
+    bottom: 10px;
+
+}
+
+.usericon {
+    font-size: 25px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+/* INNER OVER VIDEO BANNER  */
+
+.banner {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 240px;
+    padding-left: 12px;
+}
+
+.banner h1 {
+    font-size: 5rem;
+
+    background: linear-gradient(to right, #f32170, #be421c, #cf23cf, #cc6b33);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.banner h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 5px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.banner-button {
+    justify-content: flex-start;
+    padding: 0px;
+}
+
+
+.btn {
+    padding: 12px 30px;
+
+    border-radius: 5px;
+}
+
+.btn1 {
+    color: red;
+    font-weight: bold;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+.btn2 {
+    color: #000;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn2 i {
+    color: black;
+    margin-right: 4px;
+
+}
+
+
+.fa-play {
+    color: black;
+    margin: 0 5px;
+}
+
+.fa-circle-info {
+    color: #fff;
+}
+
+/* VIDEOS STYLING  */
+.video-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -100;
+    left: 0;
+    top: 0px;
+    ;
+
+
+
+}
+
+.video-container video {
+    width: 100%;
+    height: 102vh;
+    object-fit: cover;
+}
+
+.all {
+    display: none;
+    z-index: -9;
+}
+
+
+#color-overlay {
+    width: 100vw;
+    height: 105vh;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+/* SLIDER STYLING */
+.carousel {
+    width: 93%;
+    height: 170px;
+    position: absolute;
+    top: 85vh;
+    left: 0px;
+    bottom: 1000px;
+    overflow: hidden;
+
+    padding: 0 1%;
+
+}
+
+.carousel h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 55px;
+
+
+}
+
+.carousel-list {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /
+}
+
+.carousel-item {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 180px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 7px;
+    object-fit: fill;
+    cursor: pointer;
+
+
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    z-index: 5;
+    transition: all 0.2s;
+
+
+}
+
+.carousel-item img:hover {
+    transform: scale(1.2, 1.2);
+
+}
+
+.togglebtn {
+    display: none;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: #0094da;
+
+}
+
+
+
+/*  MORE info tab */
+
+
+.infotabs {
+    width: 80vw;
+    height: 101vh;
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    background: #141414;
+    ;
+    text-align: center;
+
+    border-radius: 10px;
+    overflow: auto;
+    display: none;
+    z-index: 11;
+
+
+}
+
+#close {
+    font-size: 30px;
+    position: absolute;
+    z-index: 15;
+    top: 5vh;
+    right: 15vw;
+    color: #fff;
+    display: none;
+
+}
+
+.infotabs img {
+    border-radius: 10px;
+
+}
+
+.infotabs p {
+    font-weight: bold;
+    color: #fff;
+    /* border: 2px solid red; */
+    text-align: left;
+    margin-right: 500px;
+    margin-top: 50px;
+    word-spacing: 5px;
+    height: 200px;
+    margin-left: 30px;
+    
+}
+
+.infotabrating {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+
+
+}
+
+.infotabrating span i {
+
+    font-size: 50px;
+}
+
+
+.infotabs video {
+    height: 70vh;
+}
+
+#rating {
+
+    width: 40vw;
+    margin-left: 30px;
+    height: 20vh;
+    padding: 30px;
+}
+
+#geners {
+    position: absolute;
+    top: 70vh;
+    left: 60vw;
+}
+
+
+/* video changers */
+#endgamevideo {
+    display: block;
+}
+
+/* search type IN NAVIGATION  */
+
+#searchform {
+    position: absolute;
+    top: 15px;
+    right: 400px;
+    height: 30px;
+    width: 150px;
+
+
+    position: fixed;
+    visibility: hidden;
+    opacity: 0.8;
+    transition: visibility 2s, opacity 0.5s;
+}
+
+/* INPUT IN SERACH  */
+#input {
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    background-color: rgba(24, 24, 24, 0.5);
+    border-radius: 5px;
+
+    color: #fff;
+}
+
+/* OUTSIDE CONTAINER  */
+#outsidecont h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-left: 77px;
+    padding: 50px 0px;
+}
+
+#trending {
+    margin-left: 80px;
+
+    align-items: center;
+    flex-direction: row;
+}
+
+.trending-items img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    z-index: 5;
+
+}
+
+.trending-items {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 180px;
+    border-radius: 5px;
+    margin-left: 30px;
+
+
+    object-fit: fill;
+    cursor: pointer;
+}
+
+#outsidecont {
+    background-color: #141414;
+    height: fit-content;
+
+    z-index: -100;
+
+}
+
+.trendingscale {
+
+    width: fit-content;
+    height: fit-content;
+    
+    background-color: #141414;
+    position: absolute;
+
+}
+
+.trendingscale.one {
+    top: 75vh;
+    left: 1vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.7s;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(210, 206, 206);
+
+
+}
+
+.trendingscale.two {
+    top: 75vh;
+    left: 20vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.7s;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(210, 206, 206);
+
+
+}
+
+.trendingscale.three {
+    top: 75vh;
+    left: 30vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.7s;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(210, 206, 206);
+
+
+}
+
+.trendingscale.four {
+    top: 75vh;
+    left: 50vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.7s;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(210, 206, 206);
+
+
+}
+
+.trendingscale.five {
+    top: 75vh;
+    left: 68vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.7s;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(210, 206, 206);
+
+
+}
+
+.imgdiv img {
+    width: 30vw;
+}
+
+.leftdiv span {
+    font-size: 30px;
+    margin-left: 20px;
+
+    color: #fff;
+}
+
+.leftdiv {
+    margin-top: 20px;
+}
+
+.detail p {
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+
+}
+
+.lastdetail {
+    margin-left: 23px;
+}
+
+.lastdetail span {
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.lastdetail span i {
+
+    color: red;
+    border-radius: 50%;
+}
+
+/* browse menu  */
+#browsemenu {
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 2px 2px 2px grey;
+    background-color: black;
+    opacity: 0.9;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    position: fixed;
+    display: none;
+}
+
+/* BROWSE MENU IN NAVIGATION STYLING  */
+#browsemenu div {
+    text-align: left;
+    padding: 20px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+#browsemenu div a:hover {
+
+    color: red;
+}
+
+#browsemenu div a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* cross icon trending scale */
+.crosstrend{
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 30px;
+}
+
+/* .infotabs {
+    width: fit-content;
+} */
+
+
+
+
+
+/* SLIDER ANIMATION  */
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-39%);
+    }
+
+}
+
+
+
+/* RESPONSIVE FOR DIFFERENT SCREEN SIZES */
+
+
+@media only screen and (max-width:1462px) {
+    #browsetoggle {
+        display: block;
+        top: 15px;
+        left: 300px;
+        
+
+
+    }
+    #outsidecont {
+        height: fit-content;
+    }
+    .infotabs{
+        overflow-x: hidden;
+    }
+
+    #browsetoggle:hover {
+        color: red;
+
+    }
+
+    ul li a {
+        display: none;
+    }
+
+    .logo img {
+
+        margin-left: 20px
+    }
+
+}
+
+
+
+@media only screen and (max-width:1763px) {
+    #trending {
+        margin-left: 2vw;
+    }
+    #outsidecont {
+        height: fit-content;
+    }
+
+
+}
+
+@media only screen and (max-width:1718px) {
+    #outsidecont {
+        height: 52vh;
+    }
+
+    .trendingscale.five {
+        top: 89vh;
+        left: 1vw;
+    }
+
+    .trendingscale.four {
+        top: 77vh;
+        left: 60vw;
+    }
+    
+
+
+    @keyframes slide {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-45%);
+        }
+
+    }
+
+}
+
+@media only screen and (min-width:1523px) {
+   #outsidecont {
+        height: fit-content;
+    }
+
+    .trendingscale.one {
+        top: 85vh;
+        left: 1vw;
+
+    }
+
+
+    .trendingscale.two {
+        top: 85vh;
+        left: 20vw;
+    }
+
+    .trendingscale.three {
+        top: 85vh;
+        left: 45vw;
+    }
+
+    .trendingscale.four {
+        top: 85vh;
+        left: 60vw;
+    }
+
+    .trendingscale.five {
+        top: 105vh;
+        left: 1vw;
+    }
+}
+
+@media only screen and (max-width:1524px) {
+    #outsidecont {
+        height: fit-content;
+    }
+
+    .trendingscale.one {
+        top: 85vh;
+        left: 1vw;
+
+    }
+
+
+    .trendingscale.two {
+        top: 85vh;
+        left: 20vw;
+    }
+
+    .trendingscale.three {
+        top: 85vh;
+        left: 45vw;
+    }
+
+    .trendingscale.four {
+        top: 85vh;
+        left: 60vw;
+    }
+
+    .trendingscale.five {
+        top: 105vh;
+        left: 1vw;
+    }
+}
+
+@media only screen and (max-width:1718px) {
+    @keyframes slide {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-41%);
+        }
+
+    }
+}
+
+@media only screen and (max-width:1376px) {
+
+    .trendingscale.two {
+        top: 85vh;
+        left: 25vw;
+    }
+
+    .trendingscale.three {
+        top: 85vh;
+        left: 50vw;
+    }
+
+    .trendingscale.four {
+        top: 120vh;
+        left: 1vw;
+    }
+
+    .trendingscale.five {
+        top: 120vh;
+        left: 25vw;
+    }
+
+    #outsidecont {
+        position: absolute;
+        top: 108vh;
+        height: fit-content;
+    }
+
+    .video-container video {
+        height: 110%;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:1718px) {
+    @keyframes slide {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-55%);
+        }
+
+    }
+
+}
+
+
+@media only screen and (max-width:1246px) {
+    .trendingscale.three {
+        top: 80vh;
+        left: 50vw;
+    }
+
+    .trendingscale.five {
+        top: 89vh;
+        left: 30vw;
+    }
+
+    @media only screen and (max-width:1718px) {
+        @keyframes slide {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-60%);
+            }
+
+        }
+
+    }
+
+    #usercard {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width:1254px) {
+    .trendingscale.five {
+        top: 89vh;
+        left: 31vw;
+    }
+
+    #usercard {
+        width:fit-content;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-61%);
+        }
+
+    }
+
+}
+
+@media only screen and (max-width:1140px) {
+    .video-container video {
+
+        height: 76vh;
+
+    }
+
+    .carousel {
+        top: 72vh;
+        width: 100%;
+        height: 170px;
+
+    }
+
+    #outsidecont {
+        position: absolute;
+        top: 95vh;
+        height: fit-content;
+    }
+
+    .fa-caret-down:before {
+        display: none;
+    }
+
+    .trendingscale.one {
+        top: 75vh;
+        left: 5vw;
+    }
+
+    .trendingscale.two {
+        top: 75vh;
+        left: 35vw;
+    }
+
+    .trendingscale.three {
+        top: 75vh;
+        left: 65vw;
+    }
+
+    .trendingscale.four {
+        top: 95vh;
+        left: 5vw;
+    }
+
+    .trendingscale.five {
+        top: 95vh;
+        left: 30vw;
+    }
+
+}
+
+/* for Ipad and i pad pro */
+@media only screen and (max-width:1035px) {
+    .video-container video {
+
+        height: 55vh;
+    }
+    .infotabs video {
+        height: 40vh;
+    }
+    
+    #close {
+        right: 29vw 
+    }
+
+    .container {
+
+        height: 63vh;
+    }
+
+    .video-container {
+        height: 100vh;
+    }
+
+    .carousel {
+        top: 50vh;
+
+        width: 100%;
+        height: 170px;
+
+    }
+
+    .infotabs video {
+        height: 44vh;
+    }
+
+    .infotabs {
+        left: 89px;
+        width: 69vw;
+    }
+
+    .infotabrating {
+        top: 230px;
+        left: 6px;
+    }
+
+    #outsidecont {
+        position: absolute;
+        top: 63vh;
+        height: fit-content;
+    }
+
+    .trendingscale {
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .carousel-list {
+        height: 200px;
+    }
+
+    .trendingscale img {
+        width: 40vw;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-64%);
+        }
+
+    }
+
+    #trending {
+        margin-left: 100px;
+    }
+
+    .trendingscale.one {
+        top: 80vh;
+        left: 12vw;
+    }
+
+    .trendingscale.two {
+        top: 80vh;
+        left: 45vw;
+    }
+
+    .trendingscale.three {
+        top: 80vh;
+        left: 8vw;
+    }
+
+    .trendingscale.four {
+        top: 80vh;
+        left: 41vw;
+    }
+
+    .trendingscale.five {
+        top: 81vh;
+        left: 12vw;
+    }
+
+    .banner h3 {
+        font-size: 2rem;
+        margin-top: -106px
+    }
+
+    #geners {
+        position: absolute;
+        top: 70vh;
+        left: 46vw;
+    }
+
+
+}
+
+@media only screen and (max-width:948px) {
+    .banner h3 {
+        font-size: 2rem;
+        margin-top: -100px
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .banner h3 {
+
+        margin-top: -165px
+    }
+
+    .trendingscale.one {
+        top: 80vh;
+        left: 18vw;
+    }
+
+    .trendingscale.two {
+        top: 80vh;
+        left: 45vw;
+    }
+
+    .trendingscale.three {
+        top: 83vh;
+        left: 18vw;
+    }
+
+    .trendingscale.four {
+        top: 82vh;
+        left: 45vw;
+    }
+  
+
+    .trendingscale.five {
+        top: 85vh;
+        left: 18vw;
+    }
+
+    .banner h3 {
+        font-size: 2rem;
+        margin-top: -106px
+    }
+
+    #geners {
+        position: absolute;
+        top: 70vh;
+        left: 38vw;
+    }
+}
+
+@media only screen and (max-width:940px) {
+    .right-nav {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:872px) {
+    .trendingscale.one {
+        top: 80vh;
+        left: 18vw;
+    }
+
+    .trendingscale.two {
+        top: 80vh;
+        left: 50vw;
+    }
+
+    .trendingscale.three {
+        top: 87vh;
+        left: 18vw;
+    }
+
+    .trendingscale.four {
+    top: 86vh;
+    left: 50vw;
+}
+
+    .trendingscale.five {
+        top: 85vh;
+        left: 18vw;
+    }
+
+    .trendingscale {
+        width: fit-content;
+    }
+
+    .trendingscale img {
+        width: 40vw;
+    }
+}
+
+
+@media only screen and (max-width:783px) {
+    .trending-items {
+        margin-left: 90px;
+    }
+
+    #outsidecont {
+        height: fit-content;
+    }
+
+    .trendingscale.one {
+        top: 70vh;
+        left: 25vw;
+    }
+
+    .trendingscale.two {
+        top: 97vh;
+        left: 25vw;
+    }
+
+    .trendingscale.three {
+        top: 115vh;
+        left: 25vw;
+    }
+
+    .trendingscale.four {
+        top: 119vh;
+        left: 25vw;
+    }
+
+    .trendingscale.five {
+        top: 126vh;
+        left: 25vw;
+    }
+
+    .trendingscale {
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .trendingscale img {
+        width: 40vw;
+    }
+
+
+}
+
+@media only screen and (max-width:696px) {
+    .right-nav {
+        width: 42%;
+    }
+
+    .trendingscale {
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .trendingscale img {
+        width: 45vw;
+    }
+
+    #usercard {
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width:662px) {
+    .right-nav {
+        width: 50%;
+    }
+
+    .trendingscale {
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .trendingscale img {
+        width: 52vw;
+    }
+
+    .trendingscale.five {
+        top: 160vh;
+        left: 25vw;
+    }
+   
+
+    @keyframes slide {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-70%);
+        }
+
+    }
+}
+
+@media only screen and (max-width:630px) {
+    #browsetoggle {
+        display: block;
+        top: 15px;
+        left: 226px;
+    }
+
+    .video-container video {
+        height: 40%;
+
+    }
+
+    .banner h3 {
+
+        margin-top: -235px;
+
+    }
+
+    .carousel {
+        top: 35vh;
+    }
+
+    #outsidecont {
+        top: 58vh;
+        height:fit-content;
+    }
+
+    #trending {
+        margin-left: -10px;
+    }
+    @keyframes slide {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-90%);
+        }
+
+    }
+
+    .trendingscale.one {
+        top: 70vh;
+        left: 20vw;
+    }
+
+    .trendingscale.two {
+        top: 97vh;
+        left: 20vw;
+    }
+
+    .trendingscale.three {
+        top: 115vh;
+        left: 20vw;
+    }
+
+    .trendingscale.four {
+        top: 145vh;
+        left: 20vw;
+    }
+
+    .trendingscale.five {
+        top: 146vh;
+        left: 20vw;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner h3 {
+        font-size: 1rem;
+    }
+
+    #usercard {
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width:554px) {
+    .right-nav {
+        font-size: 10px;
+    }
+
+    .right-nav span i {
+        font-size: 10px;
+    }
+
+    #browsetoggle {
+        font-size: 10px;
+        top: 25px;
+    }
+
+    .trendingscale {
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .trendingscale img {
+        width: 66vw;
+    }
+
+}
+
+/* for Iphone 14pro max  */
+@media only screen and (max-width:432px) {
+
+    .infotabs {
+        left: 51px;
+        width: 72vw;
+    }
+    #geners {
+        position: absolute;
+        top: 70vh;
+        left: 23vw;
+    }
+    #rating {
+       
+        margin-left: -1px;
+    }
+    .infotabs video {
+        height: 15vh;
+    }
+    #browsetoggle {
+        left: 200px;
+    }
+
+    #searchform {
+        right: 200px;
+    }
+
+    #outsidecont {
+        top: 53vh;
+        height: fit-content;
+    }
+    .infotabrating {
+        top: 67px ;
+    
+        
+        font-size: -4px;
+    }
+
+    #trending {
+        margin-left: -25px;
+    }
+
+    .container {
+        width: 100%;
+        height: 54vh;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-85%);
+        }
+    }
+
+    .trendingscale {
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .trendingscale img {
+        width: 71vw
+    }
+
+    .trendingscale.one {
+        top: 70vh;
+        left: 14vw;
+    }
+
+    .trendingscale.two {
+        top: 92vh;
+        left: 14vw;
+    }
+
+    .trendingscale.three {
+        top: 110vh;
+        left: 14vw;
+    }
+
+    .trendingscale.four {
+        top: 130vh;
+        left: 14vw;
+    }
+      /* five  */
+    .trendingscale.five { 
+        top: 123vh;
+        left: 14vw;
+    }
+
+    .banner h3 {
+        margin-top: -62px;
+    }
+
+    #notificationtab {
+        height: 100px;
+        width: 228px;
+        right: 72px;
+
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:431px) {
+    #browsetoggle {
+        left: 200px;
+    }
+
+    #searchform {
+        right: 200px;
+    }
+
+    #outsidecont {
+        top: 53vh;
+        height: fit-content;
+    }
+
+    #trending {
+        margin-left: -25px;
+    }
+
+    .container {
+        width: 100%;
+        height: 54vh;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-85%);
+        }
+    }
+
+    .trendingscale {
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .trendingscale img {
+        width: 71vw
+    }
+
+    .trendingscale.one {
+        top: 70vh;
+        left: 14vw;
+    }
+
+    .trendingscale.two {
+        top: 92vh;
+        left: 14vw;
+    }
+
+    .trendingscale.three {
+        top: 110vh;
+        left: 14vw;
+    }
+
+    .trendingscale.four {
+        top: 123vh;
+        left: 14vw;
+    }
+
+    .trendingscale.five {
+        top: 123vh;
+        left: 14vw;
+    }
+
+    .banner h3 {
+        margin-top: -62px;
+    }
+
+    #notificationtab {
+        height: 100px;
+        width: 228px;
+        right: 72px;
+
+    }
+}
+
+/* i phone 12 pro  */
+@media only screen and (max-width:415px) {
+    #browsetoggle {
+        left: 165px;
+        top: 7px;
+    }
+
+    #userimg {
+        height: 15px;
+        width: 15px;
+        top: 5px;
+    }
+
+    .logo img {
+        margin-left: 28px;
+        width: 100px;
+
+    }
+
+    .infotabs {
+        left: 18px;
+        width: 92vw;
+    }
+
+    .infotabs video {
+        height: 20vh;
+
+    }
+
+    .infotabrating {
+        margin-top: -328px;
+        ;
+        font-size: 15px;
+    }
+
+    #rating {
+        width: 56vw;
+    }
+
+    #geners {
+
+        top: 41vh;
+        left: 38vw;
+    }
+
+    #trending {
+        margin-left: -35px;
+    }
+
+    .trendingscale {
+        width: fit-content;
+        height: fit-content;
+
+
+
+    }
+
+    .trendingscale img {
+        width: 77vw;
+    }
+
+    .trendingscale.one {
+        top: 70vh;
+        left: 12vw;
+    }
+
+    .trendingscale.two {
+        top: 92vh;
+        left: 12vw;
+    }
+
+    .trendingscale.three {
+        top: 110vh;
+        left: 12vw;
+    }
+
+    .trendingscale.four {
+        top: 124vh;
+        left: 12vw;
+    }
+
+    .trendingscale.five {
+        top: 124vh;
+        left: 12vw;
+    }
+
+    #notificationtab {
+        height: 100px;
+        width: 228px;
+        right: 72px;
+
+    }
+
+
+    .banner h3 {
+        margin-top: -178px;
+    }
+}
+
+/* i phone 12 pro  */
+@media only screen and (max-width:392px) {
+    #browsetoggle {
+        left: 165px;
+        top: 7px;
+    }
+
+    #userimg {
+        height: 15px;
+        width: 15px;
+        top: 5px;
+    }
+
+    .logo img {
+        margin-left: 28px;
+        width: 100px;
+
+    }
+
+    .infotabs {
+        left: 18px;
+        width: 92vw;
+    }
+
+    .infotabs video {
+        height: 20vh;
+
+    }
+
+    .infotabrating {
+        margin-top: -328px;
+        ;
+        font-size: 15px;
+    }
+
+    #rating {
+        width: 56vw;
+    }
+
+    #geners {
+
+        top: 41vh;
+        left: 38vw;
+    }
+
+    #trending {
+        margin-left: -45px;
+    }
+
+    .trendingscale {
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .trendingscale img {
+        width: 77vw;
+    }
+
+    .trendingscale.one {
+        top: 70vh;
+        left: 12vw;
+    }
+
+    .trendingscale.two {
+        top: 92vh;
+        left: 12vw;
+    }
+
+    .trendingscale.three {
+        top: 110vh;
+        left: 12vw;
+    }
+
+    .trendingscale.four {
+        top: 130vh;
+        left: 12vw;
+    }
+
+    .trendingscale.five {
+        top: 131vh;
+        left: 12vw;
+    }
+
+    #notificationtab {
+        height: 100px;
+        width: 228px;
+        right: 72px;
+
+    }
+
+
+    .banner h3 {
+        margin-top: -178px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:376px) {
+    #browsetoggle {
+        left: 165px;
+        top: 7px;
+    }
+
+    #userimg {
+        height: 15px;
+        width: 15px;
+        top: 5px;
+    }
+
+    .logo img {
+        margin-left: 28px;
+        width: 100px;
+
+    }
+
+    .infotabs {
+        left: 18px;
+        width: 92vw;
+    }
+
+    .infotabs video {
+        height: 25vh;
+
+    }
+
+    .infotabrating {
+        margin-top: -328px;
+        ;
+        font-size: 15px;
+    }
+
+    #rating {
+        width: 56vw;
+        margin-left: -6px;
+
+    }
+
+    #geners {
+
+        top: 41vh;
+        left: 38vw;
+    }
+
+    #trending {
+        margin-left: -45px;
+    }
+
+    .trendingscale {
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .trendingscale img {
+        width: 77vw;
+    }
+
+    .trendingscale.one {
+        top: 70vh;
+        left: 12vw;
+    }
+
+    .trendingscale.two {
+        top: 92vh;
+        left: 12vw;
+    }
+
+    .trendingscale.three {
+        top: 110vh;
+        left: 12vw;
+    }
+
+    .trendingscale.four {
+        top: 130vh;
+        left: 12vw;
+    }
+
+    .trendingscale.five {
+        top: 137vh;
+        left: 12vw;
+    }
+    #notificationtab {
+        height: 100px;
+        width: 228px;
+        right: 72px;
+
+    }
+
+
+    .banner h3 {
+        margin-top: -178px;
+    }
+}
+
+
+@media only screen and (max-width:376px) {
+    #browsetoggle {
+        left: 140px;
+
+    }
+
+    .logo img {
+        margin-left: 24px;
+        width: 70px;
+    }
+
+    .right-nav {
+        font-size: 8px;
+    }
+
+    #trending {
+        margin-left: -61px;
+    }
+}
